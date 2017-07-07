@@ -134,9 +134,9 @@ object FileProcessorWebUI extends App with FileUpload {
   }
 
   val argMap = buildArgMap(ServerConfig.defaults, args.toList)
-
-  val p: Int = argMap(ServerConfig.port).toInt
-  val h: String = argMap(ServerConfig.host)
+  
+  val p: Int = 8080
+  val h: String = "0.0.0.0"
 
   // Update config with values from command line
   val config = ServerConfig.defaultConfig
